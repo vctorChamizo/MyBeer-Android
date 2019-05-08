@@ -1,0 +1,30 @@
+#header, #content{
+    text-align:center;
+    margin:auto;
+}
+
+img{
+    padding-left:7.5%;
+    width:100%;
+}
+#like{
+    border:#2b2b3c 5px solid;
+    border-radius:100%;
+    width:40%;
+    height:20%;
+    padding:30px;
+    margin:auto;
+    max-width: 1000px;
+}
+
+h1{
+    font-size:3em;
+}
+
+h2{
+    font-size:2em;
+}
+
+h3{
+    font-size:2em;
+}

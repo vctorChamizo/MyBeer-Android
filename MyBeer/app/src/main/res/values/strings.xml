@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- App -->
+    <string name="app_name" tools:ignore="PrivateResource">MyBeer</string>
+    <string name="myLists">Mis listas</string>
+    <string name="add">Añadir</string>
+    <string name="loading">Cargando</string>
+    <string name="loadingAdd">Añadiendo</string>
+
+    <!-- Error -->
+    <string name="err">ERROR. Vuelva a intentarlo</string>
+    <string name="errConexion">ERROR. Fallo en la conexión</string>
+    <string name="errServer">ERROR. Fallo en el servidor</string>
+    <string name="errRouteNotFound">No se ha encontrado ninguna ruta</string>
+    <string name="errDestinyNotExisit">El destino no existe</string>
+    <string name="errToReadFile">Error en la lectura de archivo. Vuelva a intentrlo.</string>
+    <string name="errDataAccess">Error al acceder a los datos</string>
+
+    <!-- Menu General-->
+    <string name="home">Inicio</string>
+
+    <!-- Mapbox -->
+    <string name="access_token">pk.eyJ1Ijoic2h1dHRsZWdvdGZnIiwiYSI6ImNqczNnYTBkejBnN2k0M254bnV4MG5hNXYifQ.NoH-PJACPLpQWZ_2A1vvMg</string>
+    <string name="user_location_permission_explanation">La aplicación necesita permisos de geolocalización.</string>
+    <string name="user_location_permission_not_granted">No tiene activos los permisos de geolocalización</string>
+
+    <!-- Menu -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Beer -->
+    <string name="beer">Cerveza</string>
+    <string name="beers">Cervezas</string>
+    <string name="myBeers">Mis cervezas</string>
+    <string name="addBeer">Añadir cerveza</string>
+    <string name="addBeers">Añadir cervezas</string>
+    <string name="introduceNameBeer">Introduce el nombre de la cerveza:</string>
+    <string name="nameBeer">Nombre</string>
+    <string name="introduceManufacturer">Introduce el fabricante de la cerveza:</string>
+    <string name="manufacturerBeer">Fabricante</string>
+    <string name="introduceStyle">Introduce el tipo de la cerveza:</string>
+    <string name="styleBeer">Tipo</string>
+    <string name="introduceStatus">¿Qué te ha parecido la cerveza?:</string>
+    <string name="statusBeerLiked">Me gusta</string>
+    <string name="statusBeerDisliked">No me gusta</string>
+    <string name="statusBeerNotTested">Pendiente</string>
+    <string name="informationBeer">Información de cerveza</string>
+
+    <string name="successfulBeerAdded">Cerveza añadida correctamente</string>
+
+    <string name="errBeerNotFound">La cerveza no existe</string>
+    <string name="errDataEmptyAddBeer">Desbes introducir los datos para añadir una cerveza</string>
+    <string name="errBeerNameEmpty">Desbes introducir un nombre</string>
+    <string name="errBeerManufacturerEmpty">Desbes introducir un fabricante</string>
+    <string name="errBeerStyleEmpty">Desbes introducir un tipo de cerveza</string>
+    <string name="errBeerStatusEmpty">Debes indicar el estado de la cerveza</string>
+    <string name="errListBeersEmptyInformation">Aún no tienes ninguna cerveza añadida</string>
+    <string name="errBeerAlreadyExists">Esta cerveza ya está añadida.</string>
+    <string name="errBeerDoesntExists">Esta cerveza no está en tu lista.</string>
+
+    <!-- Brewery -->
+    <string name="brewery">Cervecería</string>
+    <string name="brewerys">Cervecerías</string>
+    <string name="myBreweries">Mis cervecerías</string>
+    <string name="addBrewery">Añadir cervecería</string>
+    <string name="addBrewerys">Añadir cervecerías</string>
+    <string name="introduceNameBrewery">Introduce el nombre de la cervecería:</string>
+    <string name="nameBrewery">Nombre</string>
+    <string name="introduceAddressBrewery">Introduce la direccion de la cervecería</string>
+    <string name="introduceStatusBrewery">¿Qué te ha parecido la cervecería?:</string>
+    <string name="statusBreweryLiked">Me gusta</string>
+    <string name="statusBreweryDisliked">No me gusta</string>
+    <string name="statusBreweryNotTested">Pendiente</string>
+    <string name="informationBrewery">Información de cervecería</string>
+
+    <string name="successfulBreweryAdded">Cervecería añadida correctamente</string>
+
+    <string name="errBreweryNotFound">La cervecería no existe</string>
+    <string name="errDataEmptyAddBrewery">Desbes introducir los datos para añadir una cervecería</string>
+    <string name="errBreweryNameEmpty">Desbes introducir un nombre</string>
+    <string name="errBreweryAddressEmpty">Desbes introducir una direccion</string>
+    <string name="errBreweryStatusEmpty">Debes indicar el estado de la cervecería</string>
+    <string name="errBreweryAlreadyExists">Esta cerveza ya está en tu lista</string>
+    <string name="errListBreweriesEmptyInformation">Aún no tienes ninguna cervecería añadida</string>
+</resources>

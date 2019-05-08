@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_brewery_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/primary_light"
+        app:title="@string/addBrewery"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/add_brewery_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/beer_progress" />
+
+            <TextView
+                android:id="@+id/add_brewery_progress_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_brewery_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/fab_margin_bottom"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@color/mapbox_blue"
+                        android:fillViewport="true">
+
+                        <com.mapbox.mapboxsdk.maps.MapView
+                            android:id="@+id/add_brewery_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/add_brewery_address"
+                            style="@style/MapEditText"
+                            android:hint="@string/introduceAddressBrewery" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/add_brewery_linear"
+                        android:layout_below="@+id/relative_map"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp"
+                        tools:ignore="UnusedAttribute">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TittleEditText"
+                                android:text="@string/introduceNameBrewery"
+                                android:textAlignment="textStart" />
+
+                            <EditText
+                                android:id="@+id/add_brewery_name"
+                                style="@style/MainEditText"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/nameBeer"
+                                android:importantForAutofill="no"
+                                android:inputType="text"
+                                android:theme="@style/ThemeData"
+                                tools:ignore="UnusedAttribute" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/TittleEditText"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="30dp"
+                            android:text="@string/introduceStatusBrewery" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/add_brewery_rb_liked"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/statusBeerLiked" />
+
+                            <RadioButton
+                                android:id="@+id/add_brewery_rb_disliked"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/statusBeerDisliked" />
+
+                            <RadioButton
+                                android:id="@+id/add_brewery_rb_notested"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/statusBeerNotTested" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add_brewery_button"
+                        style="@style/ButtonRoundWhite"
+                        android:layout_marginTop="@dimen/route_overview_buffer_padding"
+                        android:text="@string/addBrewery"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/primary_dark" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/drawer_main_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item android:title="@string/myLists">
+
+        <menu>
+            <item
+                android:id="@+id/drawer_main_brewery"
+                android:icon="@drawable/brewey_icon"
+                android:title="@string/myBreweries" />
+
+            <item
+                android:id="@+id/drawer_main_beer"
+                android:icon="@drawable/beer_icon"
+                android:title="@string/myBeers" />
+        </menu>
+    </item>
+
+    <item android:title="@string/add">
+
+        <menu>
+
+            <item
+                android:id="@+id/drawer_main_add_brewey"
+                android:icon="@drawable/brewey_add_icon"
+                android:title="@string/addBrewery" />
+            <item
+                android:id="@+id/drawer_main_add_beer"
+                android:icon="@drawable/beer_add_icon"
+                android:title="@string/addBeer" />
+        </menu>
+    </item>
+</menu>
