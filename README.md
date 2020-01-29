@@ -5,7 +5,9 @@
 ## Introduction
 MyBeer was created like a application was used for the management of breweries and beers by the user, with the determination to be able to locate the data on a map and be able to save the information of said elements so that the user can access them whenever they want.
 
+
 ## Documentation
+The main functionality of the application consists of three modules (Main, Breweries and Beers), which are accessible through a side menu. This menu can be accessed by clicking on the upper left button of the interface or by sliding your finger from the left side of the screen to the right side.
 
 ![beers](https://user-images.githubusercontent.com/32466953/73371812-8de07500-42b6-11ea-8d89-8e8edc21cb8a.png)
 
@@ -13,17 +15,27 @@ MyBeer was created like a application was used for the management of breweries a
 
 ![main](https://user-images.githubusercontent.com/32466953/73371814-8e790b80-42b6-11ea-9117-8be9bab1a58d.png)
 
+
+## Architecture
+- **Presentation layer**: represented by the activities package, it is responsible for rendering the views. This layer, although not responsible for the logic of the application, does perform small validations that are closely linked to the input format.
+
+- **Business layer**: formed by the services of the application, it is located in the model package. In this layer, all the logic of the application takes place, in charge of complying with the business rules necessary for its proper functioning.
+
+- **Integration layer**: layer responsible for communicating with the mobile device for reading and writing the data necessary for the application to develop correctly. Implemented by the FileManager class.
+
+
 ## Project Content
-- Bachelor complete dodumentation: /doc-shuttle-go.pdf
-- APK application installer: /shuttleGoInstaller.apk
-- Source Andorid Studio client: /src/android-shuttle-go
-- Source server: /src/firebase-server
+- Application complete dodumentation: /doc-mybeer.pdf
+- APK application installer: /mybeer_app.apk
+- Source code: /src-mybeer
+
 
 ## Technologies
   - **Android Studio**: for the client application development and graphical interface. This module has been 
     developed with **Java**.
   
   - **Mapbox API**: to render and manage the map management used by the application.
+
 
 ## Setup
 This section provides the necessary indications and requirementsfor the correct installation of the ShuttleGo mobile application.
@@ -36,7 +48,7 @@ This section provides the necessary indications and requirementsfor the correct 
   3. Once inside activate the option “Unknown origins”. Google will display a message warning of the risks
 That this implies.
 
-  4. Now you can proceed to the installation of the application, running the myBeerInstaller.apk file from the device.
+  4. Now you can proceed to the installation of the application, running the mybeer_app.apk file from the device.
   
   5. This file can be copied by connecting the terminal to a computer through a USB and dragging it to any device directory; or, it can be downloaded from the repository where it is hosted. In this manual, the following will be followed Steps of the second option.
   
