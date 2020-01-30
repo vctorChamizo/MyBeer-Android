@@ -10,17 +10,22 @@ MyBeer was created like a application was used for the management of breweries a
 The main functionality of the application consists of three modules (Main, Breweries and Beers), which are accessible through a side menu. This menu can be accessed by clicking on the upper left button of the interface or by sliding your finger from the left side of the screen to the right side.
 
 ### Main Module
----
+The main module consists of a map that will show us our geolocation, as well as the breweries located in their respective locations.
+
+Breweries can be displayed in different colors according to their status. In addition to clicking on a brewery, its name will appear, and finally, in the lower right we can the floating button will automatically redirect us to our position on the map.
+
 ![main](https://user-images.githubusercontent.com/32466953/73434316-ce87cf00-4346-11ea-9ed2-9e0960fcbcf4.png)
 
 
 ### Breweries Modules
----
+The module "breweries" has two main functionalities: add a new brewery and list the breweries that the user has saved. In addition, clicking on each of the listed breweries will redirect us to a view where we can appreciate the information of the brewery in more detail.
+
 ![breweries](https://user-images.githubusercontent.com/32466953/73434688-7e5d3c80-4347-11ea-9d7e-0e7efe313029.png)
 
 
 ### Beers Module
----
+El módulo ‘cervezas’ al igual que el módulo cervecerías está constituido de dos funcionalidades principales: añadir una nueva cerveza y listas las cervezas guardadas por el usuario.
+
 ![beers](https://user-images.githubusercontent.com/32466953/73434581-4bb34400-4347-11ea-8c97-a3763d8c84e7.png)
 
 
