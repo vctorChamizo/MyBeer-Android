@@ -9,11 +9,19 @@ MyBeer was created like a application was used for the management of breweries a
 ## Documentation
 The main functionality of the application consists of three modules (Main, Breweries and Beers), which are accessible through a side menu. This menu can be accessed by clicking on the upper left button of the interface or by sliding your finger from the left side of the screen to the right side.
 
-![beers](https://user-images.githubusercontent.com/32466953/73371812-8de07500-42b6-11ea-8d89-8e8edc21cb8a.png)
+### Main Module
+---
+![main](https://user-images.githubusercontent.com/32466953/73434316-ce87cf00-4346-11ea-9ed2-9e0960fcbcf4.png)
 
-![breweries](https://user-images.githubusercontent.com/32466953/73371813-8de07500-42b6-11ea-97dc-4347d6c8c807.png)
 
-![main](https://user-images.githubusercontent.com/32466953/73371814-8e790b80-42b6-11ea-9117-8be9bab1a58d.png)
+### Breweries Modules
+---
+![breweries](https://user-images.githubusercontent.com/32466953/73434688-7e5d3c80-4347-11ea-9d7e-0e7efe313029.png)
+
+
+### Beers Module
+---
+![beers](https://user-images.githubusercontent.com/32466953/73434581-4bb34400-4347-11ea-8c97-a3763d8c84e7.png)
 
 
 ## Architecture
