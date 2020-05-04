@@ -24,7 +24,7 @@ The module "breweries" has two main functionalities: add a new brewery and list 
 
 
 ### Beers Module
-El módulo ‘cervezas’ al igual que el módulo cervecerías está constituido de dos funcionalidades principales: añadir una nueva cerveza y listas las cervezas guardadas por el usuario.
+The ‘beers’ module, like the breweries module, has two main functions: adding a new beer and listing the beers saved by the user.
 
 ![beers](https://user-images.githubusercontent.com/32466953/73434581-4bb34400-4347-11ea-8c97-a3763d8c84e7.png)
 
